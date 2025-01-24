@@ -1,0 +1,727 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "DBSCAN",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "auc",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "auc",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LocalOutlierFactor",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "importPath": "tensorflow.keras.models",
+        "description": "tensorflow.keras.models",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "importPath": "tensorflow.keras.models",
+        "description": "tensorflow.keras.models",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProcessPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ProcessPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "df = pd.read_csv(\"weatherHistory.csv\", encoding='ISO-8859-1')\n# 选择聚类和分类的特征\nfeatures = df[['Temperature (C)', 'Apparent Temperature (C)', 'Humidity', \n               'Wind Speed (km/h)', 'Wind Bearing (degrees)', \n               'Visibility (km)', 'Pressure (millibars)']]\n# 标准化数据\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用DBSCAN进行聚类\ndbscan = DBSCAN(eps=0.5, min_samples=5)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "features = df[['Temperature (C)', 'Apparent Temperature (C)', 'Humidity', \n               'Wind Speed (km/h)', 'Wind Bearing (degrees)', \n               'Visibility (km)', 'Pressure (millibars)']]\n# 标准化数据\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用DBSCAN进行聚类\ndbscan = DBSCAN(eps=0.5, min_samples=5)\nlabels = dbscan.fit_predict(features_scaled)\n# 将 DBSCAN 的标签映射为 0 和 1，-1 为噪声，标记为 1（异常），其他标记为 0（正常）",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "scaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用DBSCAN进行聚类\ndbscan = DBSCAN(eps=0.5, min_samples=5)\nlabels = dbscan.fit_predict(features_scaled)\n# 将 DBSCAN 的标签映射为 0 和 1，-1 为噪声，标记为 1（异常），其他标记为 0（正常）\ny_true = np.where(labels == -1, 1, 0)  # 1: 异常, 0: 正常\ny_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "features_scaled",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "features_scaled = scaler.fit_transform(features)\n# 使用DBSCAN进行聚类\ndbscan = DBSCAN(eps=0.5, min_samples=5)\nlabels = dbscan.fit_predict(features_scaled)\n# 将 DBSCAN 的标签映射为 0 和 1，-1 为噪声，标记为 1（异常），其他标记为 0（正常）\ny_true = np.where(labels == -1, 1, 0)  # 1: 异常, 0: 正常\ny_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "dbscan",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "dbscan = DBSCAN(eps=0.5, min_samples=5)\nlabels = dbscan.fit_predict(features_scaled)\n# 将 DBSCAN 的标签映射为 0 和 1，-1 为噪声，标记为 1（异常），其他标记为 0（正常）\ny_true = np.where(labels == -1, 1, 0)  # 1: 异常, 0: 正常\ny_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "labels = dbscan.fit_predict(features_scaled)\n# 将 DBSCAN 的标签映射为 0 和 1，-1 为噪声，标记为 1（异常），其他标记为 0（正常）\ny_true = np.where(labels == -1, 1, 0)  # 1: 异常, 0: 正常\ny_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "y_true",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "y_true = np.where(labels == -1, 1, 0)  # 1: 异常, 0: 正常\ny_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 混淆矩阵\ncm = confusion_matrix(y_true, y_pred)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "y_pred = np.where(labels == -1, 1, 0)  # DBSCAN 输出的标签\n# 计算噪声比（DBSCAN 标签为-1的比例）\nnoise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 混淆矩阵\ncm = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", cm)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "noise_count",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "noise_count = np.sum(labels == -1)\nnoise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 混淆矩阵\ncm = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", cm)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "noise_ratio",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "noise_ratio = noise_count / len(labels)\n# 输出噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 混淆矩阵\ncm = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", cm)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "cm = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", cm)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")\n# 计算 ROC 曲线\nfpr, tpr, thresholds = roc_curve(y_true, y_pred)\nroc_auc = auc(fpr, tpr)\n# 绘制 ROC 曲线\nplt.figure(figsize=(8, 6))",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "f1",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "f1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")\n# 计算 ROC 曲线\nfpr, tpr, thresholds = roc_curve(y_true, y_pred)\nroc_auc = auc(fpr, tpr)\n# 绘制 ROC 曲线\nplt.figure(figsize=(8, 6))\nplt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC curve (area = {roc_auc:.2f})')\nplt.plot([0, 1], [0, 1], color='gray', linestyle='--')\nplt.xlim([0.0, 1.0])",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "description": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "peekOfCode": "roc_auc = auc(fpr, tpr)\n# 绘制 ROC 曲线\nplt.figure(figsize=(8, 6))\nplt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC curve (area = {roc_auc:.2f})')\nplt.plot([0, 1], [0, 1], color='gray', linestyle='--')\nplt.xlim([0.0, 1.0])\nplt.ylim([0.0, 1.05])\nplt.xlabel('False Positive Rate')\nplt.ylabel('True Positive Rate')\nplt.title('Receiver Operating Characteristic (ROC) Curve')",
+        "detail": "数据挖掘大作业.代码.异常分析.DBSCAN",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "df = pd.read_csv(\"weatherHistory.csv\", encoding='ISO-8859-1')\n# 选择特征\nfeatures = df[['Temperature (C)', 'Apparent Temperature (C)', 'Humidity', \n               'Wind Speed (km/h)', 'Wind Bearing (degrees)', \n               'Visibility (km)', 'Pressure (millibars)']]\n# 数据标准化\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用LOF进行异常检测\nlof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "features = df[['Temperature (C)', 'Apparent Temperature (C)', 'Humidity', \n               'Wind Speed (km/h)', 'Wind Bearing (degrees)', \n               'Visibility (km)', 'Pressure (millibars)']]\n# 数据标准化\nscaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用LOF进行异常检测\nlof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)\ny_pred = lof.fit_predict(features_scaled)\n# LOF输出的预测值：1 表示正常点，-1 表示异常点（噪声）",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "scaler = StandardScaler()\nfeatures_scaled = scaler.fit_transform(features)\n# 使用LOF进行异常检测\nlof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)\ny_pred = lof.fit_predict(features_scaled)\n# LOF输出的预测值：1 表示正常点，-1 表示异常点（噪声）\n# 将预测结果转换为 0 和 1 的标签，1 表示异常，0 表示正常\ny_pred = np.where(y_pred == 1, 0, 1)\n# 真实标签，在没有真实标签的情况下，假设LOF的噪声标签为真实标签\ny_true = y_pred",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "features_scaled",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "features_scaled = scaler.fit_transform(features)\n# 使用LOF进行异常检测\nlof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)\ny_pred = lof.fit_predict(features_scaled)\n# LOF输出的预测值：1 表示正常点，-1 表示异常点（噪声）\n# 将预测结果转换为 0 和 1 的标签，1 表示异常，0 表示正常\ny_pred = np.where(y_pred == 1, 0, 1)\n# 真实标签，在没有真实标签的情况下，假设LOF的噪声标签为真实标签\ny_true = y_pred\n# 计算噪声数量和噪声比",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "lof",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "lof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)\ny_pred = lof.fit_predict(features_scaled)\n# LOF输出的预测值：1 表示正常点，-1 表示异常点（噪声）\n# 将预测结果转换为 0 和 1 的标签，1 表示异常，0 表示正常\ny_pred = np.where(y_pred == 1, 0, 1)\n# 真实标签，在没有真实标签的情况下，假设LOF的噪声标签为真实标签\ny_true = y_pred\n# 计算噪声数量和噪声比\nnoise_count = np.sum(y_pred == 1)\nnoise_ratio = noise_count / len(y_pred)",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "y_pred = lof.fit_predict(features_scaled)\n# LOF输出的预测值：1 表示正常点，-1 表示异常点（噪声）\n# 将预测结果转换为 0 和 1 的标签，1 表示异常，0 表示正常\ny_pred = np.where(y_pred == 1, 0, 1)\n# 真实标签，在没有真实标签的情况下，假设LOF的噪声标签为真实标签\ny_true = y_pred\n# 计算噪声数量和噪声比\nnoise_count = np.sum(y_pred == 1)\nnoise_ratio = noise_count / len(y_pred)\n# 输出噪声数量和噪声比",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "y_pred = np.where(y_pred == 1, 0, 1)\n# 真实标签，在没有真实标签的情况下，假设LOF的噪声标签为真实标签\ny_true = y_pred\n# 计算噪声数量和噪声比\nnoise_count = np.sum(y_pred == 1)\nnoise_ratio = noise_count / len(y_pred)\n# 输出噪声数量和噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 计算混淆矩阵",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "y_true",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "y_true = y_pred\n# 计算噪声数量和噪声比\nnoise_count = np.sum(y_pred == 1)\nnoise_ratio = noise_count / len(y_pred)\n# 输出噪声数量和噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 计算混淆矩阵\nconf_matrix = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", conf_matrix)",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "noise_count",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "noise_count = np.sum(y_pred == 1)\nnoise_ratio = noise_count / len(y_pred)\n# 输出噪声数量和噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 计算混淆矩阵\nconf_matrix = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", conf_matrix)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "noise_ratio",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "noise_ratio = noise_count / len(y_pred)\n# 输出噪声数量和噪声比\nprint(f\"噪声数量: {noise_count}\")\nprint(f\"噪声比: {noise_ratio}\")\n# 计算混淆矩阵\nconf_matrix = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", conf_matrix)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "conf_matrix",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "conf_matrix = confusion_matrix(y_true, y_pred)\nprint(\"混淆矩阵:\\n\", conf_matrix)\n# 计算F1分数\nf1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")\n# 计算ROC曲线及AUC\nfpr, tpr, thresholds = roc_curve(y_true, y_pred)\nroc_auc = auc(fpr, tpr)\n# 绘制ROC曲线\nplt.figure(figsize=(8, 6))",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "f1",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "f1 = f1_score(y_true, y_pred)\nprint(f\"F1 分数: {f1:.4f}\")\n# 计算ROC曲线及AUC\nfpr, tpr, thresholds = roc_curve(y_true, y_pred)\nroc_auc = auc(fpr, tpr)\n# 绘制ROC曲线\nplt.figure(figsize=(8, 6))\nplt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC curve (area = {roc_auc:.2f})')\nplt.plot([0, 1], [0, 1], color='gray', linestyle='--')\nplt.xlim([0.0, 1.0])",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "roc_auc",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.异常分析.LOF",
+        "description": "数据挖掘大作业.代码.异常分析.LOF",
+        "peekOfCode": "roc_auc = auc(fpr, tpr)\n# 绘制ROC曲线\nplt.figure(figsize=(8, 6))\nplt.plot(fpr, tpr, color='blue', lw=2, label=f'ROC curve (area = {roc_auc:.2f})')\nplt.plot([0, 1], [0, 1], color='gray', linestyle='--')\nplt.xlim([0.0, 1.0])\nplt.ylim([0.0, 1.05])\nplt.xlabel('False Positive Rate')\nplt.ylabel('True Positive Rate')\nplt.title('Receiver Operating Characteristic (ROC) Curve')",
+        "detail": "数据挖掘大作业.代码.异常分析.LOF",
+        "documentation": {}
+    },
+    {
+        "label": "recursive_forecast",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []\n    current_input = input_data.copy()\n    for _ in range(steps):\n        # 预测下一个时间步",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "process_forecast",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def process_forecast(args):\n    \"\"\"\n    处理单个起始点和预测长度的预测任务。\n    \"\"\"\n    (model_path, start_index, X_test, y_test, time_step, pred_length) = args\n    initial_input = X_test[start_index].reshape(1, time_step, 1)\n    y_test_actual_segment = y_test[start_index : start_index + pred_length]\n    if len(y_test_actual_segment) < pred_length:\n        # 如果实际数据不足，返回高误差\n        return {\"pred_length\": pred_length, \"mse\": float(\"inf\")}",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "select_random_start_indices",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def select_random_start_indices(total_length, N, time_step, max_steps):\n    \"\"\"\n    随机选择多个起始索引，确保每个起始点后有足够的步数进行预测。\n    \"\"\"\n    available_length = total_length - time_step - max_steps\n    if available_length <= 0:\n        raise ValueError(\"测试集长度不足以进行所需的预测步数。\")\n    # 随机选择 N 个起始点\n    start_indices = random.sample(range(time_step, available_length), N)\n    return start_indices",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "run_multiprocessing_forecast",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def run_multiprocessing_forecast(\n    model_path, start_indices, X_test, y_test, time_step, pred_length\n):\n    \"\"\"\n    使用多进程进行预测，并返回所有结果。\n    \"\"\"\n    # 准备参数列表\n    args_list = [\n        (model_path, idx, X_test, y_test, time_step, pred_length)\n        for idx in start_indices",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "compute_variance_over_time",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def compute_variance_over_time(\n    model_path, X_test, y_test, time_step, N, max_pred_length\n):\n    \"\"\"\n    计算不同预测长度下预测误差的均值。\n    \"\"\"\n    # 随机选择 N 个起始点\n    start_indices = select_random_start_indices(\n        len(X_test), N, time_step, max_pred_length\n    )",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "def main():\n    import pandas as pd\n    from sklearn.preprocessing import StandardScaler\n    from tensorflow.keras.models import Sequential\n    from tensorflow.keras.layers import LSTM, Dense\n    # 加载测试数据\n    X_test = np.load(\"X_test.npy\")\n    y_test = np.load(\"y_test.npy\")\n    time_step = 24  # 假设时间步为24小时\n    N = 100  # 随机选择20个起始点",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"font.sans-serif\"]",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "plt.rcParams[\"font.sans-serif\"] = [\"SimHei\"]  # 使用 SimHei 字体显示中文\nplt.rcParams[\"axes.unicode_minus\"] = False  # 正确显示负号\n# 定义滚动预测函数\ndef recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"axes.unicode_minus\"]",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "peekOfCode": "plt.rcParams[\"axes.unicode_minus\"] = False  # 正确显示负号\n# 定义滚动预测函数\ndef recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []\n    current_input = input_data.copy()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM-Time",
+        "documentation": {}
+    },
+    {
+        "label": "recursive_forecast",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "def recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []\n    current_input = input_data.copy()\n    for _ in range(steps):\n        # 预测下一个时间步",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "process_starting_point",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "def process_starting_point(args):\n    \"\"\"\n    处理单个起始点的预测任务。\n    \"\"\"\n    (model_path, start_index, X_test, y_test, time_step, day_length, week_length) = args\n    initial_input = X_test[start_index].reshape(1, time_step, 1)\n    y_test_actual_segment = y_test[start_index:]\n    # 预测一天的数据\n    day_predict = recursive_forecast(model_path, initial_input, day_length)\n    day_actual = y_test_actual_segment[:day_length]",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "select_start_indices",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "def select_start_indices(total_length, N, time_step, max_steps):\n    \"\"\"\n    选择多个起始索引，确保每个起始点后有足够的步数进行预测。\n    \"\"\"\n    available_length = total_length - time_step - max_steps\n    if available_length <= 0:\n        raise ValueError(\"测试集长度不足以进行所需的预测步数。\")\n    start_indices = np.linspace(time_step, available_length, N).astype(int)\n    return start_indices\n# 定义多进程预测函数",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "run_multiprocessing",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "def run_multiprocessing(\n    model_path, start_indices, X_test, y_test, time_step, day_length, week_length\n):\n    \"\"\"\n    使用多进程进行预测，并返回所有结果。\n    \"\"\"\n    # 准备参数列表\n    args_list = [\n        (model_path, idx, X_test, y_test, time_step, day_length, week_length)\n        for idx in start_indices",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "def main():\n    import pandas as pd\n    from sklearn.preprocessing import StandardScaler\n    from tensorflow.keras.models import Sequential\n    from tensorflow.keras.layers import LSTM, Dense\n    # 数据预处理和模型训练部分（假设之前已经完成并保存了模型）\n    # 如果需要重新训练模型，可以在这里添加代码\n    # 加载测试数据（假设在运行该脚本前已经处理好）\n    # 这里假设 X_test 和 y_test 已经保存为 .npy 文件\n    # 你需要根据实际情况调整数据加载方式",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"font.sans-serif\"]",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "plt.rcParams[\"font.sans-serif\"] = [\"SimHei\"]  # 使用 SimHei 字体显示中文\nplt.rcParams[\"axes.unicode_minus\"] = False  # 正确显示负号\n# 定义滚动预测函数\ndef recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"axes.unicode_minus\"]",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "description": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "peekOfCode": "plt.rcParams[\"axes.unicode_minus\"] = False  # 正确显示负号\n# 定义滚动预测函数\ndef recursive_forecast(model_path, input_data, steps):\n    \"\"\"\n    使用保存的模型进行滚动预测。\n    \"\"\"\n    # 加载模型\n    model = load_model(model_path)\n    predictions = []\n    current_input = input_data.copy()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.分类.forcast-LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "df = pd.read_csv(\"weatherHistory.csv\", encoding='ISO-8859-1')\n# 选择聚类和分类的特征\nfeatures = df[['Temperature (C)', 'Humidity', 'Wind Speed (km/h)']]\n# 对数据进行采样\nsampled_df = features.sample(frac=0.2, random_state=42)  # 采样10%的数据\n# 使用肘部法确定K值\ninertia = []\nK_range = range(1, 11)\nfor k in K_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10, max_iter=300)",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "features",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "features = df[['Temperature (C)', 'Humidity', 'Wind Speed (km/h)']]\n# 对数据进行采样\nsampled_df = features.sample(frac=0.2, random_state=42)  # 采样10%的数据\n# 使用肘部法确定K值\ninertia = []\nK_range = range(1, 11)\nfor k in K_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10, max_iter=300)\n    kmeans.fit(sampled_df)\n    inertia.append(kmeans.inertia_)",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "sampled_df",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "sampled_df = features.sample(frac=0.2, random_state=42)  # 采样10%的数据\n# 使用肘部法确定K值\ninertia = []\nK_range = range(1, 11)\nfor k in K_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10, max_iter=300)\n    kmeans.fit(sampled_df)\n    inertia.append(kmeans.inertia_)\n# 绘制肘部法图表\nplt.figure(figsize=(8, 4))",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "inertia",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "inertia = []\nK_range = range(1, 11)\nfor k in K_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10, max_iter=300)\n    kmeans.fit(sampled_df)\n    inertia.append(kmeans.inertia_)\n# 绘制肘部法图表\nplt.figure(figsize=(8, 4))\nplt.plot(K_range, inertia, 'bx-')\nplt.xticks(K_range)",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "K_range",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "K_range = range(1, 11)\nfor k in K_range:\n    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10, max_iter=300)\n    kmeans.fit(sampled_df)\n    inertia.append(kmeans.inertia_)\n# 绘制肘部法图表\nplt.figure(figsize=(8, 4))\nplt.plot(K_range, inertia, 'bx-')\nplt.xticks(K_range)\nplt.xlabel('Number of clusters')",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "optimal_k",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "optimal_k = 3  # 通过肘部法或其他方法确定K值\nkmeans = KMeans(n_clusters=optimal_k, random_state=42, n_init=10, max_iter=300)\nclusters = kmeans.fit_predict(sampled_df)\n# 添加聚类结果到采样数据框\nsampled_df['Cluster'] = clusters\n# 可视化聚类结果\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "kmeans = KMeans(n_clusters=optimal_k, random_state=42, n_init=10, max_iter=300)\nclusters = kmeans.fit_predict(sampled_df)\n# 添加聚类结果到采样数据框\nsampled_df['Cluster'] = clusters\n# 可视化聚类结果\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "clusters",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "clusters = kmeans.fit_predict(sampled_df)\n# 添加聚类结果到采样数据框\nsampled_df['Cluster'] = clusters\n# 可视化聚类结果\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')\nax.set_zlabel('Wind Speed (km/h)')",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "sampled_df['Cluster']",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "sampled_df['Cluster'] = clusters\n# 可视化聚类结果\nfig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')\nax.set_zlabel('Wind Speed (km/h)')\nax.set_title('3D Clusters of Weather Data')\nlegend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "fig = plt.figure(figsize=(10, 6))\nax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')\nax.set_zlabel('Wind Speed (km/h)')\nax.set_title('3D Clusters of Weather Data')\nlegend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")\nax.add_artist(legend1)\nplt.show()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "ax = fig.add_subplot(111, projection='3d')\nscatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')\nax.set_zlabel('Wind Speed (km/h)')\nax.set_title('3D Clusters of Weather Data')\nlegend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")\nax.add_artist(legend1)\nplt.show()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "scatter",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "scatter = ax.scatter(sampled_df['Temperature (C)'], sampled_df['Humidity'], sampled_df['Wind Speed (km/h)'], c=sampled_df['Cluster'], cmap='viridis', alpha=0.5)\nax.set_xlabel('Temperature (C)')\nax.set_ylabel('Humidity')\nax.set_zlabel('Wind Speed (km/h)')\nax.set_title('3D Clusters of Weather Data')\nlegend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")\nax.add_artist(legend1)\nplt.show()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "legend1",
+        "kind": 5,
+        "importPath": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "peekOfCode": "legend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")\nax.add_artist(legend1)\nplt.show()",
+        "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    }
+]
