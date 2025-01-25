@@ -1,36 +1,36 @@
-Year,Host
-1896," Athens, Greece"
-1900," Paris, France"
-1904," St. Louis, United States"
-1908," London, United Kingdom"
-1912," Stockholm, Sweden"
-1916, Cancelled (WWI – Berlin had been awarded)
-1920," Antwerp, Belgium"
-1924," Paris, France"
-1928," Amsterdam, Netherlands"
-1932," Los Angeles, United States"
-1936," Berlin, Germany"
-1940, Cancelled (WWII – Tokyo had been awarded)
-1944, Cancelled (WWII – London had been awarded)
-1948," London, United Kingdom"
-1952," Helsinki, Finland"
-1956," Melbourne, Australia"
-1960," Rome, Italy"
-1964," Tokyo, Japan"
-1968," Mexico City, Mexico"
-1972," Munich, West Germany"
-1976," Montreal, Canada"
-1980," Moscow, Soviet Union"
-1984," Los Angeles, United States"
-1988," Seoul, South Korea"
-1992," Barcelona, Spain"
-1996," Atlanta, United States"
-2000," Sydney, Australia"
-2004," Athens, Greece"
-2008," Beijing, China"
-2012," London, United Kingdom"
-2016," Rio de Janeiro, Brazil"
-2020," Tokyo, Japan (postponed to 2021 due to the coronavirus pandemic)"
-2024," Paris, France"
-2028," Los Angeles, United States"
-2032," Brisbane, Australia"
+Year,Host Country,Host City
+1896,Greece,Athens
+1900,France,Paris
+1904,United States,St. Louis
+1908,United Kingdom,London
+1912,Sweden,Stockholm
+1916,Cancelled,WWI – Berlin had been awarded
+1920,Belgium,Antwerp
+1924,France,Paris
+1928,Netherlands,Amsterdam
+1932,United States,Los Angeles
+1936,Germany,Berlin
+1940,Cancelled,WWII – Tokyo had been awarded
+1944,Cancelled,WWII – London had been awarded
+1948,United Kingdom,London
+1952,Finland,Helsinki
+1956,Australia,Melbourne
+1960,Italy,Rome
+1964,Japan,Tokyo
+1968,Mexico,Mexico City
+1972,West Germany,Munich
+1976,Canada,Montreal
+1980,Soviet Union,Moscow
+1984,United States,Los Angeles
+1988,South Korea,Seoul
+1992,Spain,Barcelona
+1996,United States,Atlanta
+2000,Australia,Sydney
+2004,Greece,Athens
+2008,China,Beijing
+2012,United Kingdom,London
+2016,Brazil,Rio de Janeiro
+2020,Japan,Tokyo
+2024,France,Paris
+2028,United States,Los Angeles
+2032,Australia,Brisbane

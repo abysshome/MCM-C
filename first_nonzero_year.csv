@@ -1,0 +1,71 @@
+Sport,Discipline,Code,Sports Governing Body,Year
+Aquatics,Artistic Swimming,SWA,World Aquatics,1984
+Aquatics,Diving,DIV,World Aquatics,1904
+Aquatics,Marathon Swimming,OWS,World Aquatics,2008
+Aquatics,Swimming,SWM,World Aquatics,1896
+Aquatics,Water Polo,WPO,World Aquatics,1900
+Archery,Archery,ARC,World Archery,1900
+Athletics,Athletics,ATH,World Athletics,1896
+Badminton,Badminton,BDM,BWF,1992
+Baseball and Softball,Baseball,BSB,WBSC[s1],1992
+Baseball and Softball,Softball,SBL,WBSC[s1],1996
+Basketball,3x3,BK3,FIBA,2020
+Basketball,Basketball,BKB,FIBA,1936
+Basque Pelota,Basque Pelota,PEL,FIPV,1900
+Boxing,Boxing,BOX,No body recognised AIBA/IBA[s2],1904
+Breaking,Breaking,BKG,WDSF,2024
+Canoeing,Sprint,CSP,ICF,1936
+Canoeing,Slalom,CSL,ICF,1972
+Cricket,Cricket,CKT,ICC,1900
+Croquet,Croquet,CQT,WCF,1900
+Cycling,BMX Freestyle,BMF,UCI,2020
+Cycling,BMX Racing,BMX,UCI,2008
+Cycling,Mountain Bike,MTB,UCI,1996
+Cycling,Road,CRD,UCI,1896
+Cycling,Track,CTR,UCI,1896
+Equestrian,Dressage,EDR,FEI,1912
+Equestrian,Eventing,EVE,FEI,1912
+Equestrian,Jumping,EJP,FEI,1900
+Equestrian,Vaulting,EVL,FEI,1920
+Equestrian,Driving,EDV,FEI,1900
+Fencing,Fencing,FEN,FIE,1896
+Field hockey,Field hockey,HOC,FIH,1908
+Football,Football,FBL,FIFA,1900
+Golf,Golf,GLF,IGF,1900
+Gymnastics,Artistic,GAR,FIG,1896
+Gymnastics,Rhythmic,GRY,FIG,1984
+Gymnastics,Trampoline,GTR,FIG,2000
+Handball,Indoor,HBL,IHF,1972
+Handball,Field,HBL,IHF,1936
+Jeu de Paume,Jeu de Paume,–,–,1908
+Judo,Judo,JUD,IJF,1964
+Karate,Karate,KTE,WKF,2020
+Lacrosse,Field,LAX,WL,1904
+Modern Pentathlon,,MPN,UIPM,1912
+Polo,Polo,POL,FIP,1900
+Rackets,Rackets,RQT,–,1908
+Roque,Roque,–,–,1904
+Rowing,Rowing,ROW,World Rowing,1900
+Rugby,Sevens,RU7,World Rugby,2016
+Rugby,Union,RUG,World Rugby,1900
+Sailing,Sailing,SAL,World Sailing,1900
+Shooting,Shooting,SHO,ISSF,1896
+Skateboarding,Skateboarding,SKB,World Skate[s4],2020
+Sport Climbing,Sport Climbing,CLB,IFSC,2020
+Surfing,Surfing,SRF,ISA,2020
+Table Tennis,Table Tennis,TTE,ITTF,1988
+Taekwondo,Taekwondo,TKW,World Taekwondo,2000
+Tennis,Tennis,TEN,ITF,1896
+Triathlon,Triathlon,TRI,World Triathlon,2000
+Tug of War,Tug of War,TOW,TWIF,1900
+Volleyball,Beach,VBV,FIVB,1996
+Volleyball,Indoor,VVO,FIVB,1964
+Water Motorsports,,PBT,UIM,1908
+Weightlifting,Weightlifting,WLF,IWF,1896
+Wrestling,Freestyle,WRF,UWW,1904
+Wrestling,Greco-Roman,WRG,UWW,1896
+Skating,Figure,FSK,ISU,1908
+Ice Hockey,Ice Hockey,IHO,IIHF,1920
+Total events,Total events,Total events,Total events,1896
+Total disciplines,Total disciplines,Total disciplines,Total disciplines,1896
+Total sports,Total sports,Total sports,Total sports,1896
