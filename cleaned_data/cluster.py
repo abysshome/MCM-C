@@ -4,7 +4,16 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 import os
+import numpy as np
 
+
+def normalize_data(df, columns):
+    df_normalized = df.copy()  # 保留原始数据
+    for column in columns:
+        min_val = df[column].min()
+        max_val = df[column].max()
+        df_normalized[column] = (df[column] - min_val) / (max_val - min_val)
+    return df_normalized
 
 def cluster1():
     # 读入数据
@@ -144,7 +153,151 @@ def cluster2():
     plt.colorbar(label='Cluster')
     plt.show()
 
+def cluster3():
+  
+    df = pd.read_csv("grouped_data_归一化.csv")
 
+    # 分析每个国家的参赛记录
+    country_count = df['NOC'].value_counts()
+    # print(country_count)
+    # 对每个国家进行分类
+    for country in country_count.index:
+        country_data = df[df['NOC'] == country]
+        classify_country(country_data,categories)
+    # 输出分类结果
+    for category, countries in categories.items():
+        print(f"{category}: {', '.join(countries)}\n")
+
+# 分类函数
+def classify_teams(row):
+    # 分类1: 近20年没有参赛记录的代表队
+    if row['recent_20_years_count'] == 0:
+        return '没有参赛记录的代表队'
+    
+    # 分类2: 有连续参赛多次记录、成绩稳定的代表队
+    elif row['recent_20_years_count'] >= 5 and row['var_total'] < 5:
+        return '成绩稳定的代表队'
+    
+    # 分类3: 参赛记录多，但排名不稳定的代表队
+    elif row['recent_20_years_count'] > 3 and row['var_total'] >= 5:
+        return '排名不稳定的代表队'
+    
+    # 分类4: 近年来刚开始参赛的代表队
+    elif row['recent_20_years_count'] <= 3:
+        return '近年来刚开始参赛的代表队'
+    
+    # 分类5: 从未获得过奖牌的国家
+    elif row['avg_gold'] == 0 and row['avg_silver'] == 0 and row['avg_bronze'] == 0:
+        return '从未获得过奖牌的国家'
+    
+    return '未分类'
+
+# 分类函数
+def classify_country_1(country_data, categories):
+    # print(country_data)
+    country = country_data['NOC'].iloc[0]
+    
+    # 获取参赛年份并计算最近10年的参赛记录
+    recent_years = country_data[country_data['Year'] >= (country_data['Year'].max() - 10)]
+    recent_count = len(recent_years)
+    # print(recent_count)
+    
+    # 计算奖牌数量和排名的标准差
+    total_medals = country_data['Gold'] + country_data['Silver'] + country_data['Bronze']
+    rank_std = np.std(total_medals)
+    # print(rank_std)
+    # 1. 近几年没有参赛记录的代表队
+    if recent_count == 0:
+        categories['近几年没有参赛记录的代表队'].append(country)
+    
+    # 2. 有连续参赛多次记录、成绩稳定的代表队
+    elif recent_count >= 5 and rank_std < 10 and total_medals.sum() >= 50:
+        categories['有连续参赛多次记录、成绩稳定的代表队'].append(country)
+    
+    # 3. 参赛记录多，但排名不稳定
+    elif recent_count >=5 and rank_std > 5 and total_medals.sum() < 10:
+        categories['参赛记录多，但排名不稳定'].append(country)
+    
+    # 4. 近年来刚开始参赛的代表队
+    elif recent_count <= 3 and (recent_years['Year'].max() - recent_years['Year'].min() > 3):
+        categories['近年来刚开始参赛的代表队'].append(country)
+    
+    # 5. 特殊的：从未获得奖牌的国家
+    elif total_medals.sum() == 0:
+        categories['特殊的：从未获得奖牌的国家'].append(country)
+    
+    # 如果未匹配到任何类别，可以根据数据添加默认分类
+    else:
+        categories['参赛记录多，但排名不稳定'].append(country)
+
+# def classify_country_2(country_data, categories):
+
+# 计算每个国家的统计数据
+def calculate_statistics():
+
+    df = pd.read_csv("summerOly_medal_counts.csv")
+
+    # 归一化
+    columns_to_normalize = ['Gold', 'Silver', 'Bronze', 'Total']
+    df_normalized = normalize_data(df, columns_to_normalize)
+
+    # 获取每个国家的分组数据
+    grouped = df.groupby('NOC').agg(
+        avg_gold=('Gold', 'mean'),
+        avg_silver=('Silver', 'mean'),
+        avg_bronze=('Bronze', 'mean'),
+        avg_total=('Total', 'mean'),
+        var_gold=('Gold', 'var'),
+        var_silver=('Silver', 'var'),
+        var_bronze=('Bronze', 'var'),
+        var_total=('Total', 'var'),
+        avg_diff_gold=('Gold', lambda x: np.mean(np.abs(x - x.mean()))),
+        avg_diff_silver=('Silver', lambda x: np.mean(np.abs(x - x.mean()))),
+        avg_diff_bronze=('Bronze', lambda x: np.mean(np.abs(x - x.mean()))),
+        avg_diff_total=('Total', lambda x: np.mean(np.abs(x - x.mean()))),
+        recent_20_years_count=('Year', lambda x: len(x[x >= (2028 - 20)]))
+    ).reset_index()
+
+    # 计算方差和平均差基于归一化数据
+    grouped['normalized_var_gold'] = df_normalized.groupby('NOC')['Gold'].var().values
+    grouped['normalized_var_silver'] = df_normalized.groupby('NOC')['Silver'].var().values
+    grouped['normalized_var_bronze'] = df_normalized.groupby('NOC')['Bronze'].var().values
+    grouped['normalized_var_total'] = df_normalized.groupby('NOC')['Total'].var().values
+    
+    grouped['normalized_avg_diff_gold'] = df_normalized.groupby('NOC')['Gold'].apply(lambda x: np.mean(np.abs(x - x.mean()))).values
+    grouped['normalized_avg_diff_silver'] = df_normalized.groupby('NOC')['Silver'].apply(lambda x: np.mean(np.abs(x - x.mean()))).values
+    grouped['normalized_avg_diff_bronze'] = df_normalized.groupby('NOC')['Bronze'].apply(lambda x: np.mean(np.abs(x - x.mean()))).values
+    grouped['normalized_avg_diff_total'] = df_normalized.groupby('NOC')['Total'].apply(lambda x: np.mean(np.abs(x - x.mean()))).values
+
+
+    grouped.to_csv('grouped_data_归一化.csv', index=False)
+
+ # 创建分类字典
+categories = {
+    '近几年没有参赛记录的代表队': [],
+    '有连续参赛多次记录、成绩稳定的代表队': [],
+    '参赛记录多，但排名不稳定': [],
+    '近年来刚开始参赛的代表队': [],
+    '特殊的：从未获得奖牌的国家': []
+}
+import json
 if __name__ == '__main__':
     os.chdir(r"C:\Users\xuwen\Desktop\MCM-C\cleaned_data")
-    cluster2()
+    # cluster3()
+    df=pd.read_csv("grouped_data_归一化.csv")
+    df['分类'] = df.apply(classify_teams, axis=1)
+    # 根据分类过滤数据
+    categories = {
+        "近20年没有参赛记录的代表队": df[df['分类'] == '没有参赛记录的代表队']['NOC'].tolist(),
+        "有连续参赛多次记录、成绩稳定的代表队": df[df['分类'] == '成绩稳定的代表队']['NOC'].tolist(),
+        "参赛记录多，但排名不稳定": df[df['分类'] == '排名不稳定的代表队']['NOC'].tolist(),
+        "近年来刚开始参赛的代表队": df[df['分类'] == '近年来刚开始参赛的代表队']['NOC'].tolist(),
+        "从未获得过奖牌的国家": df[df['分类'] == '从未获得过奖牌的国家']['NOC'].tolist()
+    }
+
+    # 导出为一个JSON文件
+    with open('teams_classification.json', 'w') as json_file:
+        json.dump(categories, json_file, ensure_ascii=False, indent=4)
+
+    # 如果你希望查看生成的 JSON 数据，可以打印出来
+    print(json.dumps(categories, ensure_ascii=False, indent=4))
