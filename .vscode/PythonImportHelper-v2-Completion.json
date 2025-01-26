@@ -41,6 +41,14 @@
         "documentation": {}
     },
     {
+        "label": "OneHotEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "KMeans",
         "importPath": "sklearn.cluster",
         "description": "sklearn.cluster",
@@ -174,6 +182,14 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "mean_squared_error",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
@@ -287,6 +303,22 @@
     },
     {
         "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_absolute_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -295,6 +327,22 @@
     },
     {
         "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
         "importPath": "sklearn.ensemble",
         "description": "sklearn.ensemble",
         "isExtraImport": true,
@@ -369,6 +417,31 @@
         "documentation": {}
     },
     {
+        "label": "pycountry",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pycountry",
+        "description": "pycountry",
+        "detail": "pycountry",
+        "documentation": {}
+    },
+    {
+        "label": "ColumnTransformer",
+        "importPath": "sklearn.compose",
+        "description": "sklearn.compose",
+        "isExtraImport": true,
+        "detail": "sklearn.compose",
+        "documentation": {}
+    },
+    {
+        "label": "Pipeline",
+        "importPath": "sklearn.pipeline",
+        "description": "sklearn.pipeline",
+        "isExtraImport": true,
+        "detail": "sklearn.pipeline",
+        "documentation": {}
+    },
+    {
         "label": "normalize_data",
         "kind": 2,
         "importPath": "cleaned_data.cluster",
@@ -409,7 +482,7 @@
         "kind": 2,
         "importPath": "cleaned_data.cluster",
         "description": "cleaned_data.cluster",
-        "peekOfCode": "def classify_teams(row):\n    # 分类1: 近20年没有参赛记录的代表队\n    if row['recent_20_years_count'] == 0:\n        return '没有参赛记录的代表队'\n    # 分类2: 有连续参赛多次记录、成绩稳定的代表队\n    elif row['recent_20_years_count'] >= 5 and row['var_total'] < 5:\n        return '成绩稳定的代表队'\n    # 分类3: 参赛记录多，但排名不稳定的代表队\n    elif row['recent_20_years_count'] > 3 and row['var_total'] >= 5:\n        return '排名不稳定的代表队'",
+        "peekOfCode": "def classify_teams(row):\n    # 分类1: 近20年没有参赛记录的国家\n    if row['recent_20_years_count'] == 0:\n        return '没有参赛记录的国家'\n    # 分类2: 有连续参赛多次记录、成绩稳定的国家\n    elif row['recent_40_years_count'] >= 8 and row['normalized_avg_diff_total'] < 0.29:\n        return '成绩稳定的国家'\n    # 分类3: 参赛记录多，但排名不稳定的国家\n    elif row['recent_40_years_count'] >= 8 and row['normalized_avg_diff_total'] >= 0.29:\n        return '排名不稳定的国家'",
         "detail": "cleaned_data.cluster",
         "documentation": {}
     },
@@ -427,7 +500,7 @@
         "kind": 2,
         "importPath": "cleaned_data.cluster",
         "description": "cleaned_data.cluster",
-        "peekOfCode": "def calculate_statistics():\n    df = pd.read_csv(\"summerOly_medal_counts.csv\")\n    # 归一化\n    columns_to_normalize = ['Gold', 'Silver', 'Bronze', 'Total']\n    df_normalized = normalize_data(df, columns_to_normalize)\n    # 获取每个国家的分组数据\n    grouped = df.groupby('NOC').agg(\n        avg_gold=('Gold', 'mean'),\n        avg_silver=('Silver', 'mean'),\n        avg_bronze=('Bronze', 'mean'),",
+        "peekOfCode": "def calculate_statistics():\n    df = pd.read_csv(\"summerOly_medal_counts.csv\")\n    # 归一化\n    columns_to_normalize = ['Gold', 'Silver', 'Bronze', 'Total']\n    df_normalized = normalize_data(df, columns_to_normalize)\n    df_normalized.to_csv('归一化奖牌.csv')\n    # 获取每个国家的分组数据\n    grouped = df.groupby('NOC').agg(\n        avg_gold=('Gold', 'mean'),\n        avg_silver=('Silver', 'mean'),",
         "detail": "cleaned_data.cluster",
         "documentation": {}
     },
@@ -436,7 +509,7 @@
         "kind": 5,
         "importPath": "cleaned_data.cluster",
         "description": "cleaned_data.cluster",
-        "peekOfCode": "categories = {\n    '近几年没有参赛记录的代表队': [],\n    '有连续参赛多次记录、成绩稳定的代表队': [],\n    '参赛记录多，但排名不稳定': [],\n    '近年来刚开始参赛的代表队': [],\n    '特殊的：从未获得奖牌的国家': []\n}\nimport json\nif __name__ == '__main__':\n    os.chdir(r\"C:\\Users\\xuwen\\Desktop\\MCM-C\\cleaned_data\")",
+        "peekOfCode": "categories = {\n    '近几年没有参赛记录的国家': [],\n    '有连续参赛多次记录、成绩稳定的国家': [],\n    '参赛记录多，但排名不稳定': [],\n    '近年来刚开始参赛的国家': [],\n    '特殊的：从未获得奖牌的国家': []\n}\nimport json\nif __name__ == '__main__':\n    os.chdir(r\"C:\\Users\\xuwen\\Desktop\\MCM-C\\cleaned_data\")",
         "detail": "cleaned_data.cluster",
         "documentation": {}
     },
@@ -2589,6 +2662,159 @@
         "description": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
         "peekOfCode": "legend1 = ax.legend(*scatter.legend_elements(), title=\"Clusters\")\nax.add_artist(legend1)\nplt.show()",
         "detail": "数据挖掘大作业.代码.数据挖掘.聚类.聚类",
+        "documentation": {}
+    },
+    {
+        "label": "extract_country",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def extract_country():\n    # 读取CSV文件\n    data = pd.read_csv(\"预测/summerOly_medal_counts.csv\")\n    # 需要提取的国家列表\n    countries = [\n        \"Argentina\", \"Australia\", \"Austria\", \"Azerbaijan\", \"Belgium\", \"Bulgaria\",   \"Canada\", \n        \"China\", \"Chinese Taipei\", \"Colombia\", \"Croatia\", \"Denmark\", \"Finland\",     \"France\", \n        \"Georgia\", \"Germany\", \"Great Britain\", \"Greece\", \"Hungary\", \"India\",    \"Indonesia\", \n        \"Iran\", \"Ireland\", \"Israel\", \"Italy\", \"Jamaica\", \"Japan\", \"Kazakhstan\",     \"Kenya\", \n        \"Mexico\", \"Morocco\", \"Netherlands\", \"New Zealand\", \"North Korea\", \"Norway\",  \"Poland\", ",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "player_leveled",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def player_leveled():\n    data = pd.read_csv(\"预测/summerOly_athletes.csv\")\n    # 定义奖牌对应的分数\n    medal_scores = {\n        'No medal': 0,\n        'Bronze': 0.3,\n        'Silver': 0.5,\n        'Gold': 1\n    }\n    # 为每个奖项添加对应的分数",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "classify_performance",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def classify_performance(count):\n    if count == 0:\n        return 0  # 一般\n    elif count <= 2:\n        return 1  # 良好\n    else:\n        return 2  # 优秀\n# 绘制运动员得分饼状图\ndef draw_pie_chart():\n    # 读取CSV数据",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "draw_pie_chart",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def draw_pie_chart():\n    # 读取CSV数据\n    data = pd.read_csv(\"预测/medal_counts_by_player.csv\")\n    # 定义得分区间\n    bins = [-1,0, 0.3, 0.5, 1.0, data['Score'].max() + 0.1]\n    labels = ['0','[0,0.3]','(0.3,0.5]', '(0.5,1.0]', f'({1.0},{data[\"Score\"].max()}]']\n    # 根据得分划分区间\n    data['Score Range'] = pd.cut(data['Score'], bins=bins, labels=labels, right=True)\n    # 统计每个区间的运动员数量\n    score_distribution = data['Score Range'].value_counts()",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "count_athletes_by_level",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def count_athletes_by_level():\n    # 读取运动员数据集\n    athletes_data = pd.read_csv('预测/summerOly_athletes.csv')  # 请根据文件实际路径调整\n    ratings_data = pd.read_csv('预测/medal_counts_by_player.csv')  # 请根据文件实际路径调整\n    # 合并两个数据集，基于运动员名字进行合并\n    merged_data = pd.merge(athletes_data, ratings_data, on='Name', how='left')\n    # 对每个NOC和Year进行分组，统计每个等级的数量\n    result = merged_data.groupby(['NOC', 'Year', 'Level']).size().unstack(fill_value=0)\n    result.to_csv(\"预测/athletesLevel_num_by_NOC_Year.csv\", index=True)\n    # 输出结果",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def merge():\n    # 读取奖牌数据集\n    medals_data = pd.read_csv('预测/filtered_summerOly_medal_counts.csv')  # 请根据文件实际路径调整\n    # 读取运动员数据集\n    athletes_data = pd.read_csv('预测/athletesLevel_num_by_NOC_Year.csv')  # 请根据文件实际路径调整\n    # 合并两个数据集，基于 'NOC' 和 'Year' 列\n    merged_data = pd.merge(medals_data, athletes_data, on=['NOC', 'Year'], how='left')\n    merged_data.to_csv(\"预测/merged_data.csv\", index=True)\nimport pycountry\n# Name->NOC",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "merage_1",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def merage_1():\n    # 读取奖牌数据集\n    medals_data = pd.read_csv('预测/filtered_summerOly_medal_counts.csv')  # 请根据文件实际路径调整\n    # 读取运动员数据集\n    athletes_data = pd.read_csv('预测/athletesLevel_num_by_NOC_Year.csv')  # 请根据文件实际路径调整\n    # 将奖牌数据集中的 NOC 全称转换为三字母缩写\n    medals_data['NOC'] = medals_data['NOC'].apply(full_name_to_abbr)\n    medals_data.to_csv(\"预测/filtered_summerOly_medal_counts.csv\", index=True)\n    # 合并两个数据集，基于 'NOC' 和 'Year' 列\n    merged_data = pd.merge(medals_data, athletes_data, on=['NOC', 'Year'], how='left')",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "full_name_to_abbr",
+        "kind": 2,
+        "importPath": "预测.predicate",
+        "description": "预测.predicate",
+        "peekOfCode": "def full_name_to_abbr(full_name):\n    try:\n        country = pycountry.countries.get(name=full_name)\n        return country.alpha_3 if country else None\n    except KeyError:\n        return None\nif __name__ == \"__main__\":\n    # extract_country()\n    player_leveled()\n    draw_pie_chart()",
+        "detail": "预测.predicate",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "data = pd.read_csv('预测/merged_data.csv')\n# 数据预处理\n# 计算总奖牌数\ndata['Total'] = data['Gold'] + data['Silver'] + data['Bronze']\n# 特征和目标\nX = data[['Year', 'Gold', 'Silver', 'Bronze', 'player0_num', 'player1_num', 'player2_num']]\ny_total = data['Total']\ny_rank = data['Rank']\n# 分割数据集\nX_train, X_test, y_total_train, y_total_test = train_test_split(X, y_total, test_size=0.2, random_state=42)",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "data['Total']",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "data['Total'] = data['Gold'] + data['Silver'] + data['Bronze']\n# 特征和目标\nX = data[['Year', 'Gold', 'Silver', 'Bronze', 'player0_num', 'player1_num', 'player2_num']]\ny_total = data['Total']\ny_rank = data['Rank']\n# 分割数据集\nX_train, X_test, y_total_train, y_total_test = train_test_split(X, y_total, test_size=0.2, random_state=42)\n_, _, y_rank_train, y_rank_test = train_test_split(X, y_rank, test_size=0.2, random_state=42)\n# 创建回归模型（预测奖牌总数）\nregressor = RandomForestRegressor(n_estimators=100, random_state=42)",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "X = data[['Year', 'Gold', 'Silver', 'Bronze', 'player0_num', 'player1_num', 'player2_num']]\ny_total = data['Total']\ny_rank = data['Rank']\n# 分割数据集\nX_train, X_test, y_total_train, y_total_test = train_test_split(X, y_total, test_size=0.2, random_state=42)\n_, _, y_rank_train, y_rank_test = train_test_split(X, y_rank, test_size=0.2, random_state=42)\n# 创建回归模型（预测奖牌总数）\nregressor = RandomForestRegressor(n_estimators=100, random_state=42)\nregressor.fit(X_train, y_total_train)\n# 预测总奖牌数",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "y_total",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "y_total = data['Total']\ny_rank = data['Rank']\n# 分割数据集\nX_train, X_test, y_total_train, y_total_test = train_test_split(X, y_total, test_size=0.2, random_state=42)\n_, _, y_rank_train, y_rank_test = train_test_split(X, y_rank, test_size=0.2, random_state=42)\n# 创建回归模型（预测奖牌总数）\nregressor = RandomForestRegressor(n_estimators=100, random_state=42)\nregressor.fit(X_train, y_total_train)\n# 预测总奖牌数\ny_total_pred = regressor.predict(X_test)",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "y_rank",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "y_rank = data['Rank']\n# 分割数据集\nX_train, X_test, y_total_train, y_total_test = train_test_split(X, y_total, test_size=0.2, random_state=42)\n_, _, y_rank_train, y_rank_test = train_test_split(X, y_rank, test_size=0.2, random_state=42)\n# 创建回归模型（预测奖牌总数）\nregressor = RandomForestRegressor(n_estimators=100, random_state=42)\nregressor.fit(X_train, y_total_train)\n# 预测总奖牌数\ny_total_pred = regressor.predict(X_test)\nprint(\"Mean Absolute Error for Total Medal Prediction:\", mean_absolute_error(y_total_test, y_total_pred))",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "regressor",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "regressor = RandomForestRegressor(n_estimators=100, random_state=42)\nregressor.fit(X_train, y_total_train)\n# 预测总奖牌数\ny_total_pred = regressor.predict(X_test)\nprint(\"Mean Absolute Error for Total Medal Prediction:\", mean_absolute_error(y_total_test, y_total_pred))\n# 创建分类模型（预测排名）\nclassifier = RandomForestClassifier(n_estimators=100, random_state=42)\nclassifier.fit(X_train, y_rank_train)\n# 预测排名\ny_rank_pred = classifier.predict(X_test)",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "y_total_pred",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "y_total_pred = regressor.predict(X_test)\nprint(\"Mean Absolute Error for Total Medal Prediction:\", mean_absolute_error(y_total_test, y_total_pred))\n# 创建分类模型（预测排名）\nclassifier = RandomForestClassifier(n_estimators=100, random_state=42)\nclassifier.fit(X_train, y_rank_train)\n# 预测排名\ny_rank_pred = classifier.predict(X_test)\nprint(\"Accuracy for Rank Prediction:\", accuracy_score(y_rank_test, y_rank_pred))",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "classifier",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "classifier = RandomForestClassifier(n_estimators=100, random_state=42)\nclassifier.fit(X_train, y_rank_train)\n# 预测排名\ny_rank_pred = classifier.predict(X_test)\nprint(\"Accuracy for Rank Prediction:\", accuracy_score(y_rank_test, y_rank_pred))",
+        "detail": "预测.回归模型",
+        "documentation": {}
+    },
+    {
+        "label": "y_rank_pred",
+        "kind": 5,
+        "importPath": "预测.回归模型",
+        "description": "预测.回归模型",
+        "peekOfCode": "y_rank_pred = classifier.predict(X_test)\nprint(\"Accuracy for Rank Prediction:\", accuracy_score(y_rank_test, y_rank_pred))",
+        "detail": "预测.回归模型",
         "documentation": {}
     },
     {
