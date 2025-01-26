@@ -122,5 +122,8 @@ if __name__ == '__main__':
     os.chdir(r"C:\Users\xuwen\Desktop\MCM-C\cleaned_data")
     print(os.getcwd())
     # padel_num_by_NOC()
-    # delete_team("summerOly_athletes.csv")
-    medals_by_country_year()
+    delete_team("summerOly_athletes.csv")
+    # medals_by_country_year()
+
+
+
